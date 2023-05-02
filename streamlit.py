@@ -62,12 +62,12 @@ def histogram():
         sns.histplot(data=df_[df_.diabetes == 1], x="blood_glucose_level", binwidth = 40, binrange= [80,300], stat='probability', color="red", ax=ax[0])  # distplot is deprecate and replaced by histplot
         ax[0].set_ylim(0,0.6)
         ax[0].set_xlim(80,300)
-        ax[0].set_xticks(range(80,300,20))
+        ax[0].set_xticks(range(80,320,20))
         ax[0].set_title("Blood glucose level probability in patients with Diabetes (N = 8500)")
         sns.histplot(data=df_[df_.diabetes == 0], x="blood_glucose_level", color="skyblue", binwidth = 40,binrange= [80,300], stat='probability', ax=ax[1])  # distplot is deprecate and replaced by histplot
         ax[1].set_ylim(0,0.6)
         ax[1].set_xlim(80,300)
-        ax[1].set_xticks(range(80,300,20))
+        ax[1].set_xticks(range(80,320,20))
         ax[1].set_title("Blood glucose level probability in patients without Diabetes (N = 89552)")
         st.pyplot(fig)
     
