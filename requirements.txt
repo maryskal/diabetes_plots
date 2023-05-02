@@ -1,5 +1,5 @@
-matplotlib==3.7.0
 pandas==1.4.2
 seaborn==0.12.2
-streamlit==1.22.0
 statsmodels==0.13.5
+matplotlib==3.7.0
+opencv-python==4.7.0.72
