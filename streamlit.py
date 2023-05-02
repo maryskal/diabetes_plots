@@ -3,7 +3,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from statsmodels.graphics.mosaicplot import mosaic
-import cv2
+from PIL import Image
+import numpy as np
 
 
 def histogram():
@@ -108,6 +109,6 @@ if __name__ == "__main__":
     if st.sidebar.checkbox("Mosaic plot"):
         mosaic_plot()
     if st.sidebar.checkbox("Network plot"):
-        st.image(cv2.imread("diabetes.png"))
+        st.image(np.array(Image.open("diabetes.png")))
     
 
